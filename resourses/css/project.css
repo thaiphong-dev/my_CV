@@ -1,54 +1,252 @@
-/* container */
+/* #ded0b5 */
 
 * {
-    padding: 0px;
-    margin: 0px;
+    /* background-color: #ded0b5; */
+    width: 1000px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    letter-spacing: 1px;
     box-sizing: border-box;
-    color: black;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    width: 0px;
+    height: 0px;
+}
 
-/* logo */
+.cv-left {
+    background-color: rgb(73, 65, 60);
+    color: white;
+    width: 35%;
+    height: 1000px;
+    float: left;
+}
 
-.logo {
+.cv-left .name {
     width: auto;
-    height: 60px;
-    background: #189eff;
 }
 
-.logo img {
-    padding: 10px 0px 10px 20px;
-    margin-left: 180px;
-    display: inline;
-    float: left;
-}
-
-.logo input {
-    padding: 10px 0px 10px 20px;
-    margin: 10px auto;
-    float: left;
-    width: 400px;
-    border: 0px;
-}
-
-input {
-    display: inline;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.small-icon {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.small-icon {
-    background-color: coral;
-    display: inline-block;
-    width: 60px;
-    height: 40px;
-    margin-top: 10px;
-    padding: 10px;
+.cv-left .name h1 {
+    width: auto;
+    display: block;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.cv-left .name h4 {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ava {
+    display: block;
+    text-align: center;
+    width: 30%;
+}
+
+.ava img {
+    display: block;
+    width: 250%;
+    border-radius: 50%;
+    transform: translate(15%, 0%);
+    padding-bottom: 20px;
+}
+
+.box {
+    width: auto;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+}
+
+.box p {
+    /* margin-bottom: 10px;
+    margin-left: 10px; */
+    width: 100%;
+    display: block;
+    line-height: 150%;
+}
+
+.box p i {
+    display: inline;
+    margin-right: 10px;
+    color: #ded0b5;
+}
+
+.aim {
+    display: block;
+    width: auto;
+}
+
+.aim .title {
+    margin: 20px 0px 10px 0px;
+    width: auto;
+}
+
+.aim .title h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.aim .title h3::after {
+    content: " ";
+    display: block;
+    width: 280px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.aim p {
+    width: 100%;
+    display: block;
+    /* margin-left: 10px; */
+    padding: 0px 10px 0px 10px;
+    /* line-height: 150%; */
+}
+
+
+/* --------------------------------- */
+
+
+/* định dạng chung cho thẻ hiển thị skill */
+
+.skill {
+    width: auto;
+}
+
+
+/* định dạng cho từng skill theo số liệu */
+
+.html {
+    border: solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    color: ;
+    background-color: white;
+}
+
+.css {
+    width: 50%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 60%;
+    background-color: #f44336;
+}
+
+.pts {
+    width: 60%;
+    background-color: #808080;
+}
+
+
+/* ---------------------------------- */
+
+
+/* --------------cv-right--------------- */
+
+
+/* --------------------------------------- */
+
+.cv-right {
+    background-color: #ded0b5;
+    display: block;
+    width: 65%;
+    height: 1000px;
+    float: left;
+}
+
+.cv-right .first {
+    width: auto;
+    margin-top: 50px;
+}
+
+.cv-right .first .edu {
+    width: 95%;
+    background-color: rgb(73, 65, 60);
+    color: white;
+    /* margin-top: 50px; */
+    height: 5%;
+}
+
+.cv-right .first .edu h3 {
+    text-transform: uppercase;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+.cv-right .first .edu h3 i {
+    display: inline;
+    margin-right: 10px;
+    width: auto;
+}
+
+.cv-right .first .infor {
+    width: 95%;
+    padding-left: 10px;
+}
+
+.cv-right .first .infor p {
+    /* letter-spacing: 1px; */
+    display: inline;
+    width: auto;
+}
+
+.cv-right .first .infor .date {
+    float: right;
+    display: inline;
+    width: auto;
+}
+
+.cv-right .second {
+    width: auto;
+    margin-top: 30px;
+}
+
+.cv-right .second .exp {
+    width: 95%;
+    background-color: rgb(73, 65, 60);
+    color: white;
+    /* margin-top: 50px; */
+    height: 5%;
+}
+
+.cv-right .second .exp h3 {
+    text-transform: uppercase;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+.cv-right .second .exp h3 i {
+    display: inline;
+    margin-right: 10px;
+    width: auto;
+}
+
+.cv-right .second .infor2 {
+    width: 95%;
+    padding-left: 10px;
+}
+
+.cv-right .second .infor2 p {
+    /* letter-spacing: 1px; */
+    display: inline;
+    width: auto;
 }

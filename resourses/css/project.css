@@ -1,252 +1,297 @@
-/* #ded0b5 */
-
 * {
-    /* background-color: #ded0b5; */
-    width: 1000px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    line-height: 150%;
-    letter-spacing: 1px;
+    font-style: san-serif;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    margin: 0em;
+    padding: 0em;
 }
 
-.clearfix::after {
-    clear: both;
-    content: ".";
-    display: block;
-    width: 0px;
-    height: 0px;
+
+/* intro */
+
+.intro {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.gauravghai.dev/images/header-background.jpg);
+    background-size: cover;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-repeat: no-repeat;
 }
 
-.cv-left {
-    background-color: rgb(73, 65, 60);
-    color: white;
-    width: 35%;
-    height: 1000px;
-    float: left;
+.section {
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    height: 5em;
 }
 
-.cv-left .name {
-    width: auto;
-}
-
-.cv-left .name h1 {
-    width: auto;
-    display: block;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.cv-left .name h4 {
-    display: block;
-    width: auto;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.ava {
-    display: block;
-    text-align: center;
+.infor {
     width: 30%;
+    margin-top: 1.3em;
+    margin-left: 4em;
 }
 
-.ava img {
-    display: block;
-    width: 250%;
-    border-radius: 50%;
-    transform: translate(15%, 0%);
-    padding-bottom: 20px;
-}
-
-.box {
+.intro .infor h1 {
     width: auto;
-    margin-bottom: 10px;
-    /* margin-left: 10px; */
+    color: white;
+    z-index: 1;
+    opacity: 1;
 }
 
-.box p {
-    /* margin-bottom: 10px;
-    margin-left: 10px; */
-    width: 100%;
+.nav__bar {
+    display: inline-block;
+    float: right;
+    width: 70%;
+    margin-top: 1.3em;
+    margin-right: 4em;
+}
+
+.nav__bar ul {
+    list-style-type: none;
+    float: right;
+}
+
+.nav__bar ul li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0em;
+    right: 0em;
+    left: 0px;
+    color: black;
     display: block;
-    line-height: 150%;
+    opacity: ;
+    z-index: 2;
 }
 
-.box p i {
-    display: inline;
-    margin-right: 10px;
-    color: #ded0b5;
-}
-
-.aim {
-    display: block;
-    width: auto;
-}
-
-.aim .title {
-    margin: 20px 0px 10px 0px;
-    width: auto;
-}
-
-.aim .title h3 {
-    width: 100%;
+.description {
     text-align: center;
+    margin-top: 15rem;
 }
 
-.aim .title h3::after {
-    content: " ";
-    display: block;
-    width: 280px;
-    height: 2px;
-    background-color: #fff;
+.description h1 {
+    color: white;
+}
+
+.nav__bar2 {
+    margin-top: 2rem;
+}
+
+.nav__bar2 ul {
+    list-style: none;
+}
+
+.nav__bar2 ul li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8em;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* porfolio */
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: #6d6f71;
+    font-size: 1.5em;
+}
+
+.portfolio__works {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    width: 80%;
     margin: 0 auto;
-    margin-top: 5px;
 }
 
-.aim p {
+.portfolio__project {
+    width: 30%;
+    margin: 1em;
+}
+
+.portfolio__project-img img {
     width: 100%;
-    display: block;
-    /* margin-left: 10px; */
-    padding: 0px 10px 0px 10px;
-    /* line-height: 150%; */
 }
 
 
-/* --------------------------------- */
+/* -------------------------------- */
 
 
-/* định dạng chung cho thẻ hiển thị skill */
+/* .experience */
+
+.experience {
+    background-color: #f1f1f1;
+    display: flex;
+}
+
+.story {
+    width: 40%;
+    margin: 3em 4em 2em 7em;
+}
+
+.story h1 {
+    color: #6d6f71;
+    margin 0.5em;
+}
+
+.story p {
+    line-height: 150%;
+    font-size: 125%;
+}
+
+.btn {
+    margin: 1em auto;
+    font-size: 1.2em;
+    height: 12%;
+}
 
 .skill {
-    width: auto;
+    width: 60%;
+    margin: 1.5em auto;
 }
 
 
-/* định dạng cho từng skill theo số liệu */
+/* progress bar */
 
-.html {
-    border: solid 1px;
-    border-radius: 5px;
+.icon {
+    background-color: #ffff;
+    width: 70%;
+    border-radius: 0.45em;
+    padding: 0.2em;
+    margin: 1em auto;
+    margin-left: 0em;
+}
+
+#html {
+    background-color: #6d6f71;
+    width: 80%;
+    height: 0.7em;
+    border-radius: 0.35em;
+}
+
+#css {
+    background-color: #6d6f71;
+    width: 60%;
+    height: 0.7em;
+    border-radius: 0.35em;
+}
+
+#js {
+    background-color: #6d6f71;
+    width: 40%;
+    height: 0.7em;
+    border-radius: 0.35em;
+}
+
+#react {
+    background-color: #6d6f71;
+    width: 0%;
+    height: 0.7em;
+    border-radius: 0.35em;
+}
+
+#bootstrap {
+    background-color: #6d6f71;
+    width: 10%;
+    height: 0.7em;
+    border-radius: 0.35em;
+}
+
+
+/* ------------------------------------------ */
+
+
+/* content box  */
+
+.content__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+    background-color: #fff;
+    margin: 5em auto;
+    border: 1em solid #6d6f71;
+}
+
+.left>img {
     width: 100%;
-    color: ;
-    background-color: white;
+    margin: 1em auto;
 }
 
-.css {
-    width: 50%;
-    background-color: #2196F3;
+form>h1 {
+    font-weight: lighter;
+    font-size: 3em;
+    color: #6d6f71;
 }
 
-.js {
-    width: 60%;
-    background-color: #f44336;
+.right {
+    margin: 2em;
 }
 
-.pts {
-    width: 60%;
-    background-color: #808080;
+.field {
+    width: 100%;
+    margin-top: 1.5em;
+    padding-left: 1em;
+    font-size: 1em;
+    background-color: #f1f1f1;
+    line-height: 200%;
+    border: 0.125em solid #fff;
+}
+
+.area {
+    line-height: 100%;
+    font-size: 1.2em;
+}
+
+.sub__btn {
+    width: 100%;
+    height: 2.5em;
+    background-color: rgba(2, 2, 29, 0.795);
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
 }
 
 
-/* ---------------------------------- */
+/* footer */
 
+.contact {
+    background-color: #2b3641;
+    height: 15em;
+    padding: 7em;
+    display: flex;
+    justify-content: flex-end;
+}
 
-/* --------------cv-right--------------- */
-
-
-/* --------------------------------------- */
-
-.cv-right {
-    background-color: #ded0b5;
+.contact p {
     display: block;
-    width: 65%;
-    height: 1000px;
-    float: left;
+    margin-top: 1em;
+    color: #f1f1f1;
 }
 
-.cv-right .first {
-    width: auto;
-    margin-top: 50px;
-}
 
-.cv-right .first .edu {
-    width: 95%;
-    background-color: rgb(73, 65, 60);
-    color: white;
-    /* margin-top: 50px; */
-    height: 5%;
-}
-
-.cv-right .first .edu h3 {
-    text-transform: uppercase;
-    width: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-    letter-spacing: 3px;
-}
-
-.cv-right .first .edu h3 i {
-    display: inline;
-    margin-right: 10px;
-    width: auto;
-}
-
-.cv-right .first .infor {
-    width: 95%;
-    padding-left: 10px;
-}
-
-.cv-right .first .infor p {
-    /* letter-spacing: 1px; */
-    display: inline;
-    width: auto;
-}
-
-.cv-right .first .infor .date {
-    float: right;
-    display: inline;
-    width: auto;
-}
-
-.cv-right .second {
-    width: auto;
-    margin-top: 30px;
-}
-
-.cv-right .second .exp {
-    width: 95%;
-    background-color: rgb(73, 65, 60);
-    color: white;
-    /* margin-top: 50px; */
-    height: 5%;
-}
-
-.cv-right .second .exp h3 {
-    text-transform: uppercase;
-    width: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-    letter-spacing: 3px;
-}
-
-.cv-right .second .exp h3 i {
-    display: inline;
-    margin-right: 10px;
-    width: auto;
-}
-
-.cv-right .second .infor2 {
-    width: 95%;
-    padding-left: 10px;
-}
-
-.cv-right .second .infor2 p {
-    /* letter-spacing: 1px; */
-    display: inline;
-    width: auto;
-}
+/* ------------------------------------------------------------
+------------------the end----------------------------------- */

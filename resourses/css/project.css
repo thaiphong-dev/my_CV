@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0em;
     padding: 0em;
+    scroll-behavior: smooth;
 }
 
 
@@ -40,32 +41,56 @@
 }
 
 .nav__bar {
-    display: inline-block;
-    float: right;
+    /* display: inline-block; */
+    /* justify-content: left; */
     width: 70%;
+    margin: auto;
+    padding-right: 5em;
+    /* float: right;
+    display: block; */
+    /* width: 70%;
     margin-top: 1.3em;
-    margin-right: 4em;
+    margin-right: 4em; */
 }
 
 .nav__bar ul {
     list-style-type: none;
     float: right;
+    /* display: flex; */
+    justify-content: right;
+    align-items: right;
 }
 
 .nav__bar ul li {
     display: inline-block;
+    font-weight: 400;
     width: 100px;
-    height: 40px;
-    line-height: 40px;
+    /* height: 40px; */
+    line-height: 3;
     font-size: 1.2em;
+    justify-content: center;
+    text-align: center;
+    /* line-height: 150%; */
 }
 
 a {
     text-decoration: none;
     color: #f1f1f1;
+    display: block;
+    /* transition-duration: 1000ms; */
+    /* width: 100px;
+    height: 56.7px; */
+    width: 100%;
+    height: 100%;
 }
 
-.nav__overlay {
+.nav__bar ul li :hover {
+    background-color: rgb(88, 97, 224);
+    transition: 0.3s;
+}
+
+
+/* .nav__overlay {
     position: fixed;
     top: 0em;
     right: 0em;
@@ -74,7 +99,7 @@ a {
     display: block;
     opacity: ;
     z-index: 2;
-}
+} */
 
 .description {
     text-align: center;
@@ -107,9 +132,13 @@ a {
 
 /* porfolio */
 
+.portfolio {
+    margin: 0em;
+}
+
 .title {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 2em;
     text-align: center;
     color: #6d6f71;
     font-size: 1.5em;
@@ -142,11 +171,16 @@ a {
 .experience {
     background-color: #f1f1f1;
     display: flex;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .story {
     width: 40%;
     margin: 3em 4em 2em 7em;
+    /* transform: translateX(-130%); */
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .story h1 {
@@ -168,6 +202,9 @@ a {
 .skill {
     width: 60%;
     margin: 1.5em auto;
+    /* transform: translateX(100%); */
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 

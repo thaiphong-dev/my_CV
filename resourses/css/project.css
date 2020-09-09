@@ -36,8 +36,8 @@
 .intro .infor h1 {
     width: auto;
     color: white;
-    z-index: 1;
-    opacity: 1;
+    /* z-index: 1; */
+    /* opacity: 1; */
 }
 
 .nav__bar {
@@ -57,8 +57,8 @@
     list-style-type: none;
     float: right;
     /* display: flex; */
-    justify-content: right;
-    align-items: right;
+    /* justify-content: right;
+    align-items: right; */
 }
 
 .nav__bar ul li {
@@ -89,6 +89,14 @@ a {
     transition: 0.3s;
 }
 
+.nav__btn {
+    width: 6em;
+    height: auto;
+    color: #f1f1f1;
+    display: none;
+    text-align: center;
+}
+
 
 /* .nav__overlay {
     position: fixed;
@@ -111,7 +119,7 @@ a {
 }
 
 .nav__bar2 {
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 
 .nav__bar2 ul {
@@ -124,6 +132,19 @@ a {
     height: 40px;
     line-height: 40px;
     font-size: 1.8em;
+}
+
+.arrow {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8em;
+    color: #f1f1f1;
+    /* text-align: center;
+    align-items: center; */
+    margin: 0 auto;
+    margin-top: 10em;
 }
 
 
@@ -332,3 +353,38 @@ form>h1 {
 
 /* ------------------------------------------------------------
 ------------------the end----------------------------------- */
+
+
+/* responsive */
+
+
+/* mobile and tablet  */
+
+
+/* tablet width >= 740px <=1024px */
+
+@media only screen and (max-width: 63.9375em) {
+    .section {
+        height: 4em;
+        width: 100%;
+        display: flex;
+    }
+    .infor {
+        width: 150%;
+        margin: auto 0em;
+        /* padding 0em; */
+        margin-left: 2em;
+    }
+    .infor h1 {
+        font-size: 1.5em;
+    }
+    .nav__bar ul {
+        display: none;
+    }
+    .nav__btn {
+        display: block;
+        /* width: 20%; */
+        margin: auto;
+        margin-right: 1em;
+    }
+}

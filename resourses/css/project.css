@@ -110,13 +110,15 @@ a {
 } */
 
 .description {
-    text-align: center;
-    margin-top: 15rem;
     position: relative;
+    text-align: center;
+    margin-top: 12rem;
 }
 
 .description h1 {
     color: white;
+    /* display: block;
+    position: relative; */
 }
 
 .nav__bar2 {
@@ -196,7 +198,7 @@ a {
 
 .portfolio__project {
     width: 30%;
-    margin: 1r em;
+    margin: 1rem;
 }
 
 .portfolio__project-img img {

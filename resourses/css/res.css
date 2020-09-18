@@ -1,0 +1,57 @@
+/* mobile width < 740px */
+
+@media only screen and (max-width: 46.187em) {
+    /* header */
+    .section {
+        height: 3em;
+        width: 100%;
+        display: flex;
+    }
+    .infor {
+        width: 150%;
+        margin: auto 0em;
+        /* padding 0em; */
+        margin-left: 1em;
+    }
+    .infor h1 {
+        font-size: 1.5em;
+    }
+    .nav__bar ul {
+        display: none;
+    }
+    .nav__btn {
+        display: block;
+        /* width: 20%; */
+        margin: auto;
+        margin-right: 1em;
+    }
+}
+
+
+/* tablet width >= 740px <=1024px */
+
+@media only screen and (max-width: 63.9375em) {
+    .section {
+        height: 3em;
+        width: 100%;
+        display: flex;
+    }
+    .infor {
+        width: 150%;
+        margin: auto 0em;
+        /* padding 0em; */
+        margin-left: 1em;
+    }
+    .infor h1 {
+        font-size: 1.5em;
+    }
+    .nav__bar ul {
+        display: none;
+    }
+    .nav__btn {
+        display: block;
+        /* width: 20%; */
+        margin: auto;
+        margin-right: 1em;
+    }
+}

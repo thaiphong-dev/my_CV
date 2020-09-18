@@ -1,8 +1,13 @@
 * {
     font-style: san-serif;
     box-sizing: border-box;
+<<<<<<< HEAD
     margin: 0rem;
     padding: 0rem;
+=======
+    margin: 0em;
+    padding: 0em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
     scroll-behavior: smooth;
 }
 
@@ -45,12 +50,21 @@
     /* justify-content: left; */
     width: 70%;
     margin: auto;
+<<<<<<< HEAD
     padding-right: 5rem;
     /* float: right;
     display: block; */
     /* width: 70%;
     margin-top: 1.3rem;
     margin-right: 4rem; */
+=======
+    padding-right: 5em;
+    /* float: right;
+    display: block; */
+    /* width: 70%;
+    margin-top: 1.3em;
+    margin-right: 4em; */
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
 }
 
 .nav__bar ul {
@@ -58,7 +72,11 @@
     float: right;
     /* display: flex; */
     /* justify-content: right;
+<<<<<<< HEAD
     align-itrems: right; */
+=======
+    align-items: right; */
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
 }
 
 .nav__bar ul li {
@@ -67,7 +85,11 @@
     width: 100px;
     /* height: 40px; */
     line-height: 3;
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 1.2em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
     justify-content: center;
     text-align: center;
     /* line-height: 150%; */
@@ -90,7 +112,11 @@ a {
 }
 
 .nav__btn {
+<<<<<<< HEAD
     width: 6rem;
+=======
+    width: 6em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
     height: auto;
     color: #f1f1f1;
     display: none;
@@ -120,7 +146,7 @@ a {
 }
 
 .nav__bar2 {
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 
 .nav__bar2 ul {
@@ -150,6 +176,19 @@ a {
     margin-top: 17rem;
 }
 
+.arrow {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8em;
+    color: #f1f1f1;
+    /* text-align: center;
+    align-items: center; */
+    margin: 0 auto;
+    margin-top: 10em;
+}
+
 
 /* ----------------------------------------------------------- */
 
@@ -157,12 +196,21 @@ a {
 /* porfolio */
 
 .portfolio {
+<<<<<<< HEAD
     margin: 0rem;
 }
 
 .title {
     padding-top: 5rem;
     padding-bottom: 2rem;
+=======
+    margin: 0em;
+}
+
+.title {
+    padding-top: 5em;
+    padding-bottom: 2em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
     text-align: center;
     color: #6d6f71;
     font-size: 1.5rem;
@@ -195,16 +243,28 @@ a {
 .experience {
     background-color: #f1f1f1;
     display: flex;
+<<<<<<< HEAD
     margin-top: 5rrem;
     margin-bottom: 5rem;
+=======
+    margin-top: 5em;
+    margin-bottom: 5em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
 }
 
 .story {
     width: 40%;
+<<<<<<< HEAD
     margin: 3rem 4rem 2rem 7rem;
     /* transform: translateX(-130%); */
     padding-top: 5rem;
     padding-bottom: 5rem;
+=======
+    margin: 3em 4em 2em 7em;
+    /* transform: translateX(-130%); */
+    padding-top: 5em;
+    padding-bottom: 5em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
 }
 
 .story h1 {
@@ -231,10 +291,17 @@ a {
 
 .skill {
     width: 60%;
+<<<<<<< HEAD
     margin: 1.5rem auto;
     /* transform: translateX(100%); */
     padding-top: 5rem;
     padding-bottom: 5rem;
+=======
+    margin: 1.5em auto;
+    /* transform: translateX(100%); */
+    padding-top: 5em;
+    padding-bottom: 5em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
 }
 
 
@@ -372,20 +439,35 @@ form>h1 {
 
 /* tablet width >= 740px <=1024px */
 
+<<<<<<< HEAD
 @media only screen and (max-width: 63.9375rem) {
     .section {
         height: 4rem;
+=======
+@media only screen and (max-width: 63.9375em) {
+    .section {
+        height: 4em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
         width: 100%;
         display: flex;
     }
     .infor {
         width: 150%;
+<<<<<<< HEAD
         margin: auto 0rem;
         /* padding 0rem; */
         margin-left: 2rem;
     }
     .infor h1 {
         font-size: 1.5rem;
+=======
+        margin: auto 0em;
+        /* padding 0em; */
+        margin-left: 2em;
+    }
+    .infor h1 {
+        font-size: 1.5em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
     }
     .nav__bar ul {
         display: none;
@@ -394,6 +476,7 @@ form>h1 {
         display: block;
         /* width: 20%; */
         margin: auto;
+<<<<<<< HEAD
         margin-right: 1rem;
     }
     /* mobile */
@@ -432,5 +515,8 @@ form>h1 {
     }
     .right {
         width: 100%;
+=======
+        margin-right: 1em;
+>>>>>>> a141a683d02b41794d9174a2d98374dbc43df04b
     }
 }

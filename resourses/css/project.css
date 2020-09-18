@@ -1,8 +1,9 @@
 * {
     font-style: san-serif;
     box-sizing: border-box;
-    margin: 0em;
-    padding: 0em;
+    margin: 0rem;
+    padding: 0rem;
+    scroll-behavior: smooth;
 }
 
 
@@ -23,62 +24,95 @@
 .section {
     display: flex;
     background: rgba(0, 0, 0, 0.6);
-    height: 5em;
+    height: 5rem;
 }
 
 .infor {
     width: 30%;
-    margin-top: 1.3em;
-    margin-left: 4em;
+    margin-top: 1.3rem;
+    margin-left: 4rem;
 }
 
 .intro .infor h1 {
     width: auto;
     color: white;
-    z-index: 1;
-    opacity: 1;
+    /* z-index: 1; */
+    /* opacity: 1; */
 }
 
 .nav__bar {
-    display: inline-block;
-    float: right;
+    /* display: inline-block; */
+    /* justify-content: left; */
     width: 70%;
-    margin-top: 1.3em;
-    margin-right: 4em;
+    margin: auto;
+    padding-right: 5rem;
+    /* float: right;
+    display: block; */
+    /* width: 70%;
+    margin-top: 1.3rem;
+    margin-right: 4rem; */
 }
 
 .nav__bar ul {
     list-style-type: none;
     float: right;
+    /* display: flex; */
+    /* justify-content: right;
+    align-itrems: right; */
 }
 
 .nav__bar ul li {
     display: inline-block;
+    font-weight: 400;
     width: 100px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.2em;
+    /* height: 40px; */
+    line-height: 3;
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+    /* line-height: 150%; */
 }
 
 a {
     text-decoration: none;
     color: #f1f1f1;
+    display: block;
+    /* transition-duration: 1000ms; */
+    /* width: 100px;
+    height: 56.7px; */
+    width: 100%;
+    height: 100%;
 }
 
-.nav__overlay {
+.nav__bar ul li :hover {
+    background-color: rgb(88, 97, 224);
+    transition: 0.3s;
+}
+
+.nav__btn {
+    width: 6rem;
+    height: auto;
+    color: #f1f1f1;
+    display: none;
+    text-align: center;
+}
+
+
+/* .nav__overlay {
     position: fixed;
-    top: 0em;
-    right: 0em;
+    top: 0rem;
+    right: 0rem;
     left: 0px;
     color: black;
     display: block;
     opacity: ;
     z-index: 2;
-}
+} */
 
 .description {
     text-align: center;
     margin-top: 15rem;
+    position: relative;
 }
 
 .description h1 {
@@ -95,10 +129,25 @@ a {
 
 .nav__bar2 ul li {
     display: inline-block;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.8em;
+    width: 6.25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+}
+
+.arrow {
+    position: relative;
+    display: block;
+    display: inline-block;
+    width: 6.25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    /* text-align: center;
+    align-itrems: center; */
+    margin: 0 auto;
+    margin-top: 17rem;
 }
 
 
@@ -107,12 +156,16 @@ a {
 
 /* porfolio */
 
+.portfolio {
+    margin: 0rem;
+}
+
 .title {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
     text-align: center;
     color: #6d6f71;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .portfolio__works {
@@ -126,7 +179,7 @@ a {
 
 .portfolio__project {
     width: 30%;
-    margin: 1em;
+    margin: 1rrem;
 }
 
 .portfolio__project-img img {
@@ -142,16 +195,21 @@ a {
 .experience {
     background-color: #f1f1f1;
     display: flex;
+    margin-top: 5rrem;
+    margin-bottom: 5rem;
 }
 
 .story {
     width: 40%;
-    margin: 3em 4em 2em 7em;
+    margin: 3rem 4rem 2rem 7rem;
+    /* transform: translateX(-130%); */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .story h1 {
     color: #6d6f71;
-    margin 0.5em;
+    margin: 0.5rem;
 }
 
 .story p {
@@ -160,14 +218,23 @@ a {
 }
 
 .btn {
-    margin: 1em auto;
-    font-size: 1.2em;
-    height: 12%;
+    /* display: block; */
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    /* height: 12%; */
+    height: 2.5rem;
+    /* width: 12rem; */
+    /* text-align: center; */
+    /* justify-content: center */
+    /* text-align: left; */
 }
 
 .skill {
     width: 60%;
-    margin: 1.5em auto;
+    margin: 1.5rem auto;
+    /* transform: translateX(100%); */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -176,45 +243,45 @@ a {
 .icon {
     background-color: #ffff;
     width: 70%;
-    border-radius: 0.45em;
-    padding: 0.2em;
-    margin: 1em auto;
-    margin-left: 0em;
+    border-radius: 0.45rem;
+    padding: 0.2rem;
+    margin: 1rem auto;
+    margin-left: 0rem;
 }
 
 #html {
     background-color: #6d6f71;
     width: 80%;
-    height: 0.7em;
-    border-radius: 0.35em;
+    height: 0.7rem;
+    border-radius: 0.35rem;
 }
 
 #css {
     background-color: #6d6f71;
     width: 60%;
-    height: 0.7em;
-    border-radius: 0.35em;
+    height: 0.7rem;
+    border-radius: 0.35rem;
 }
 
 #js {
     background-color: #6d6f71;
     width: 40%;
-    height: 0.7em;
-    border-radius: 0.35em;
+    height: 0.7rem;
+    border-radius: 0.35rem;
 }
 
 #react {
     background-color: #6d6f71;
     width: 0%;
-    height: 0.7em;
-    border-radius: 0.35em;
+    height: 0.7rem;
+    border-radius: 0.35rem;
 }
 
 #bootstrap {
     background-color: #6d6f71;
     width: 10%;
-    height: 0.7em;
-    border-radius: 0.35em;
+    height: 0.7rem;
+    border-radius: 0.35rem;
 }
 
 
@@ -229,50 +296,50 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 60%;
+    width: 60%;
     background-color: #fff;
-    margin: 5em auto;
-    border: 1em solid #6d6f71;
+    margin: 5rem auto;
+    border: 1rem solid #6d6f71;
 }
 
 .left>img {
     width: 100%;
-    margin: 1em auto;
+    margin: 1rem auto;
 }
 
 form>h1 {
     font-weight: lighter;
-    font-size: 3em;
+    font-size: 3rem;
     color: #6d6f71;
 }
 
 .right {
-    margin: 2em;
+    margin: 2rem;
 }
 
 .field {
     width: 100%;
-    margin-top: 1.5em;
-    padding-left: 1em;
-    font-size: 1em;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
     background-color: #f1f1f1;
     line-height: 200%;
-    border: 0.125em solid #fff;
+    border: 0.125rem solid #fff;
 }
 
 .area {
     line-height: 100%;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .sub__btn {
     width: 100%;
-    height: 2.5em;
+    height: 2.5rem;
     background-color: rgba(2, 2, 29, 0.795);
     color: #fff;
-    font-size: 1.2em;
-    border-radius: 0.5em;
-    margin-top: 1.5em;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -280,18 +347,90 @@ form>h1 {
 
 .contact {
     background-color: #2b3641;
-    height: 15em;
-    padding: 7em;
+    height: 15rem;
+    padding: 7rem;
     display: flex;
     justify-content: flex-end;
 }
 
 .contact p {
     display: block;
-    margin-top: 1em;
+    margin-top: 1rem;
     color: #f1f1f1;
 }
 
 
 /* ------------------------------------------------------------
 ------------------the end----------------------------------- */
+
+
+/* responsive */
+
+
+/* mobile and tablet  */
+
+
+/* tablet width >= 740px <=1024px */
+
+@media only screen and (max-width: 63.9375rem) {
+    .section {
+        height: 4rem;
+        width: 100%;
+        display: flex;
+    }
+    .infor {
+        width: 150%;
+        margin: auto 0rem;
+        /* padding 0rem; */
+        margin-left: 2rem;
+    }
+    .infor h1 {
+        font-size: 1.5rem;
+    }
+    .nav__bar ul {
+        display: none;
+    }
+    .nav__btn {
+        display: block;
+        /* width: 20%; */
+        margin: auto;
+        margin-right: 1rem;
+    }
+    /* mobile */
+    @media only screen and (max-width:48rem) and (min-width: 20rem) {}
+    .portfolio__project {
+        width: 100%;
+    }
+    .experience {
+        flex-direction: column;
+    }
+    .story {
+        width: 95%;
+        margin: 3rem 0.5rem 2rem 0.5rem;
+        /* margin-top: 10rem; */
+        padding: 0;
+    }
+    .btn {
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+        /* display: block; */
+        text-align: right;
+        /* justify-items: right; */
+    }
+    .skill {
+        width: 95%;
+        margin-left: 2.5rem;
+    }
+    .icon {
+        width: 90%;
+    }
+    .content__box {
+        width: 100%;
+    }
+    .left>img {
+        display: none;
+    }
+    .right {
+        width: 100%;
+    }
+}

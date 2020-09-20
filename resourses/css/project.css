@@ -454,7 +454,7 @@ form>h1 {
         background-color: #fff;
         color: black;
         z-index: 2;
-        text-align: right;
+        /* text-align: right; */
         margin: auto;
         transform: translateX(100%);
         transition: transform linear 0.2s;
@@ -470,10 +470,13 @@ form>h1 {
         height: 3rem;
         /* justify-content: center; */
     }
+    .nav__mobile-bar ul li i {
+        margin-right: 1rem;
+    }
     .nav__mobile-link {
-        color: black;
+        color: rgb(141, 137, 137);
         padding: 0.7rem;
-        padding-right: 2.5rem;
+        padding-left: 2rem;
         /* line-height: 1.7rem; */
         font-size: 1.5rem;
     }
@@ -484,7 +487,7 @@ form>h1 {
         width: 2rem;
         height: 2rem;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
         /* z-index: 3; */
     }
     .nav__input:checked~.nav__mobile-bar {

@@ -19,6 +19,7 @@
     background-position-x: initial;
     background-position-y: initial;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .section {
@@ -46,6 +47,7 @@
     width: 70%;
     margin: auto;
     padding-right: 5rem;
+    text-align: right;
     /* float: right;
     display: block; */
     /* width: 70%;
@@ -55,7 +57,9 @@
 
 .nav__bar ul {
     list-style-type: none;
-    float: right;
+    /* display: inline-block;
+    text-align: right; */
+    /* float: right; */
     /* display: flex; */
     /* justify-content: right;
     align-itrems: right; */
@@ -64,13 +68,17 @@
 .nav__bar ul li {
     display: inline-block;
     font-weight: 400;
-    width: 100px;
+    width: 6.5rem;
     /* height: 40px; */
-    line-height: 3;
+    line-height: 4rem;
     font-size: 1.2rem;
     justify-content: center;
     text-align: center;
     /* line-height: 150%; */
+}
+
+.nav__mobile-bar {
+    display: none;
 }
 
 a {
@@ -95,6 +103,10 @@ a {
     color: #f1f1f1;
     display: none;
     text-align: center;
+}
+
+.nav__input {
+    display: none;
 }
 
 
@@ -149,7 +161,7 @@ a {
     /* text-align: center;
     align-itrems: center; */
     margin: 0 auto;
-    margin-top: 16rem;
+    margin-top: 17rem;
 }
 
 
@@ -312,8 +324,8 @@ a {
 .content__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     text-align: center;
     width: 60%;
     background-color: #fff;
@@ -393,10 +405,14 @@ form>h1 {
 /* tablet width >= 740px <=1024px */
 
 @media only screen and (max-width: 63.9375rem) {
+    /* introduction */
     .section {
         height: 4rem;
         width: 100%;
         display: flex;
+    }
+    h1 {
+        color: #fff;
     }
     .infor {
         width: 160%;
@@ -418,9 +434,83 @@ form>h1 {
     }
     /* mobile */
     @media only screen and (max-width:48rem) and (min-width: 20rem) {}
+    /* introduction */
+    .infor {
+        margin-left: 0.5rem;
+        width: 200%;
+    }
+    .arrow {
+        margin-top: 14.6875rem;
+    }
+    .nav__mobile-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        /* max-width: 100%; */
+        background-color: #fff;
+        color: black;
+        z-index: 2;
+        text-align: right;
+        margin: auto;
+        transform: translateX(100%);
+        transition: transform linear 0.2s;
+    }
+    .nav__mobile-list {
+        list-style: none;
+        padding-top: 3rem;
+        /* height: 1.5rem; */
+    }
+    .nav__mobile-bar ul li {
+        /* padding-right: 2.5rem; */
+        margin-top: 1rem;
+        height: 3rem;
+        /* justify-content: center; */
+    }
+    .nav__mobile-link {
+        color: black;
+        padding: 0.7rem;
+        padding-right: 2.5rem;
+        /* line-height: 1.7rem; */
+        font-size: 1.5rem;
+    }
+    .nav__mobile-bar--btn {
+        font-size: 2rem;
+        color: #666;
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        top: 1rem;
+        left: 1rem;
+        /* z-index: 3; */
+    }
+    .nav__input:checked~.nav__mobile-bar {
+        transform: translateX(0%);
+        /* color: red; */
+    }
+    .nav__mobile-bar ul li :hover {
+        background-color: #9ca1a7;
+        transition: 0.2s;
+    }
+    /* @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    } */
+    /* .nav__input:checked~.nav__mobile-bar--btn i {
+        transform: translateX(100%); 
+    }*/
+    /* .portfolio */
     .portfolio__project {
         width: 100%;
     }
+    /* .experience */
     .experience {
         flex-direction: column;
     }
@@ -444,6 +534,7 @@ form>h1 {
     .icon {
         width: 90%;
     }
+    /* contact */
     .content__box {
         width: 100%;
         text-align: center;
@@ -469,5 +560,8 @@ form>h1 {
         margin-left: 3rem;
         padding: 0;
         text-align: right;
+    }
+    .sub__btn {
+        border-radius: 0rem;
     }
 }
